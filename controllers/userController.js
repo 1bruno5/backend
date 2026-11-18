@@ -1,7 +1,7 @@
 const db = require("../database/database.js");
 const bcrypt = require("bcrypt");
 
-// Never return the password column to the client
+
 function withoutPassword(user) {
     const { password, ...safe } = user;
     return safe;

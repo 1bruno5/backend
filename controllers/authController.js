@@ -26,7 +26,7 @@ function insertUser(username, hashedPassword, role, department, name, email) {
     });
 }
 
-// STEP 4: Register
+
 async function register(req, res) {
     try {
         const { username, password, role, department, name, email } = req.body;
@@ -69,7 +69,7 @@ async function register(req, res) {
     }
 }
 
-// STEP 5: Login
+
 async function login(req, res) {
     try {
         const { username, password } = req.body;
